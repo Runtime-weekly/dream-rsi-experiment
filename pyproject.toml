@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dream-rsi-reproduction"
+version = "0.1.0"
+description = "Independent reconstruction of Dream-RSI section 3; not the authors' implementation"
+requires-python = ">=3.12"
+dependencies = ["numpy", "scipy", "scikit-learn"]
+
+[project.scripts]
+dream-rsi = "dreamrsi.cli:main"
+
+[tool.setuptools]
+packages = ["dreamrsi"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

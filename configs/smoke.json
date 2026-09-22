@@ -1,0 +1,14 @@
+{
+  "model": "qwen3.8:27b",
+  "endpoint": "http://127.0.0.1:11434",
+  "rounds": 2,
+  "online_rounds": 2,
+  "replay_rounds": 8,
+  "workers": 1,
+  "policy_versions": 2,
+  "cost_weight": 0.001,
+  "parallel_weight": 0.0005,
+  "seed": 20260920,
+  "max_output_tokens": 4096,
+  "model_timeout_seconds": 240
+}
